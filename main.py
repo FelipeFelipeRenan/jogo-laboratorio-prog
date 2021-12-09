@@ -66,6 +66,9 @@ def jooj():
 
         velocidade_x += 0.5
         pos_x_car -= velocidade_x
+            
+        if pos_x_car <= 0:
+            pos_x_car = LARGURA-tamanho
 
         pg.display.update()
         clock.tick(5)
